@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Responsive Card</title>
+  <!-- Include Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+      .icon-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+      .social-icon {
+          width: 50px;
+          margin: 10px;
+      }
+      @media screen and (max-width: 600px) {
+          .social-icon {
+              width: 40px;
+          }
+      }
+      .verified {
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+          justify-content: center;
+          color: black;
+        }
+
+        .verified-check {
+            margin-left: 5px;
+            width: 18px;
+            height: 18px;
+            background: url('https://cdn-icons-png.flaticon.com/128/6294/6294076.png') no-repeat center center;
+            background-size: contain;
+            display: inline-block;
+        }
+        /* calendar */
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+      .social-icon {
+          width: 50px;
+          margin: 10px;
+      }
+      .frosted-button {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            color: black;
+            border: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .social-icon {
+                width: 40px;
+            }
+        }
+  </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-200">
+  <div class="w-full sm:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5 md:w-4/5 h-full bg-white p-8 rounded-lg shadow-md overflow-y-auto">
+    <div class="flex flex-col items-center">
+      <!-- Profile Image -->
+      <img src="https://via.placeholder.com/100" alt="Profile Picture" class="w-24 h-24 rounded-full mb-4 border-2 border-gray-300">
+      <h1 class="verified">
+        Charlie London<span class="verified-check"></span>
+    </h1>
+      <p class="text-gray-700 mb-4">This card takes up 100% of the width on mobile and 80% on desktop, and 100% of the height.</p>
+      <!-- Social Media Icons -->
+      <div class="icon-container">
+        <a href="https://linktw.in/MrSNqR">
+          <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-free-13/32/YouTube_Play_social_media_logo-512.png" alt="YouTube Logo">
+        </a>
+        <a>
+          <img class="social-icon" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_glyph_svg-512.png" alt="Facebook Logo">
+        </a>
+        <a>
+          <img class="social-icon" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-512.png" alt="Twitter Logo">
+        </a>
+        <a href="https://www.instagram.com/charlielondonstudios/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+          <img class="social-icon" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" alt="Instagram Logo">
+        </a>
+        <a href="https://instagram.com/charlielondonhair?igshid=NTc4MTIwNjQ2YQ==">
+          <img class="social-icon" src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png" alt="Instagram Logo">
+        </a>
+        <a>
+          <img class="social-icon" src="https://cdn2.iconfinder.com/data/icons/social-media-2421/512/TikTok-512.png" alt="LinkedIn Logo">
+        </a>
+      </div>
+    </div>
+     <!-- Calendar Card -->
+     <div class="flex items-center bg-white rounded-lg shadow-md p-4 mt-8 mx-auto relative" style="width: 650px; height: 150px;">
+        <img src="https://images.pexels.com/photos/5386754/pexels-photo-5386754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Calendar" class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+        <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
+            <span class="text-xl font-bold text-white">Charlie London Beauty Boutique</span>
+        </div>
+        <button class="frosted-button py-3 px-7 rounded-lg absolute right-4 my-auto  ">Schedule</button>
+    </div>
+    
+
+</body>
+</html>
