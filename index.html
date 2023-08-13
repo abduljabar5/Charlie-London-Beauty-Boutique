@@ -103,6 +103,7 @@
             backdrop-filter: blur(5px);
             color: black;
             border: none;
+            margin: 0 auto;
         }
 
         @media screen and (max-width: 600px) {
@@ -110,13 +111,64 @@
                 width: 40px;
             }
         }
+        .calendar-card {
+      max-width: 650px;
+      width: 100%;
+      height: 150px;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .frosted-button {
+        padding: 10px 10px;
+        margin-top: auto;
+      }
+      .widget-text{
+        font-size: 17px;
+        margin-right: 85px;
+        
+      }
+
+    }
+    .map-container {
+        position: relative;
+        width: 100%;
+        max-width: 650px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        margin: 40px auto;
+    }
+    iframe {
+        border: 0;
+        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+    .frosted-button {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7); /* Heavy shadow */
+}
+
+    .frosted-button:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    @media only screen and (max-width: 600px) {
+        .map-container {
+            height: 200px;
+        }
+        .directions-button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    }
   </style>
 </head>
 <body class="flex justify-center items-center h-screen bg-gray-200">
   <div class="w-full sm:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5 md:w-4/5 h-full bg-white p-8 rounded-lg shadow-md overflow-y-auto">
     <div class="flex flex-col items-center">
       <!-- Profile Image -->
-      <img src="https://via.placeholder.com/100" alt="Profile Picture" class="w-24 h-24 rounded-full mb-4 border-2 border-gray-300">
+      <img src="https://via.placeholder.com/200" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4 border-2 border-gray-300">
       <h1 class="verified">
         Charlie London<span class="verified-check"></span>
     </h1>
@@ -144,14 +196,33 @@
       </div>
     </div>
      <!-- Calendar Card -->
-     <div class="flex items-center bg-white rounded-lg shadow-md p-4 mt-8 mx-auto relative" style="width: 650px; height: 150px;">
-        <img src="https://images.pexels.com/photos/5386754/pexels-photo-5386754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Calendar" class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
-        <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
-            <span class="text-xl font-bold text-white">Charlie London Beauty Boutique</span>
-        </div>
-        <button class="frosted-button py-3 px-7 rounded-lg absolute right-4 my-auto  ">Schedule</button>
+  <div class="flex items-center bg-white rounded-lg shadow-md p-4 mt-8 mx-auto relative calendar-card">
+    <img src="https://images.pexels.com/photos/5386754/pexels-photo-5386754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Calendar" class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+    <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
+      <span class="widget-text text-xl font-bold text-white">Charlie London Beauty Boutique</span>
     </div>
-    
-
+    <a href="#" class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center">
+        Schedule
+        <img src="images/1814093_calendar_events_schedule_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
+    </a>  </div>
+  <!-- About section -->
+  <div class="flex items-center bg-white rounded-lg shadow-md p-4 mt-8 mx-auto relative calendar-card">
+    <img src="https://cutewallpaper.org/24/pictures-of-beauty-salon/371029450.jpg" alt="Calendar" class="absolute top-0 left-0 w-full h-full object-cover rounded-lg">
+    <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
+        <span class="widget-text text-xl font-bold text-white">About me</span>
+    </div>
+    <a href="#" class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center">
+        Learn More
+        <img src="images/4829859_arrow_next_right_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
+    </a>
+</div>
+<!-- maps -->
+<div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.905249897732!2d-93.09561028820883!3d44.94559407094944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d505a173e339%3A0xa3b41da5dd55e6c0!2sCharlie%20London%20Beauty%20Boutique!5e0!3m2!1sen!2sus!4v1691118898489!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Charlie+London+Beauty+Boutique" target="_blank" class="frosted-button py-3 px-7 text-black rounded-lg absolute left-16 bottom-4 flex items-center">
+        Get Directions
+        <img src="images/392502_gps_location_map_marker_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
+    </a>
+  </div>
 </body>
 </html>
