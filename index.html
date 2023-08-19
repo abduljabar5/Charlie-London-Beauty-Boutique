@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Responsive Card</title>
+  <title>Charlie London</title>
+  <link rel="icon" href="images/replicate-prediction-pj7bsbzbh7a5oyadrphpcisrmu.png" />
   <!-- Include Tailwind CSS via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
   <style>
     body {
 	width: 100wh;
@@ -175,7 +178,7 @@
       <p class="text-gray-700 m-4 mb-8">I am a woman before I am a hairstylist</p>
       <!-- Social Media Icons -->
       <div class="icon-container">
-        <a href="https://linktw.in/MrSNqR">
+        <a href="https://linktw.in/MrSNqR" target="_blank">
           <img class="social-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-free-13/32/YouTube_Play_social_media_logo-512.png" alt="YouTube Logo">
         </a>
         <a href="https://www.facebook.com/brittany.patterson.9277?mibextid=LQQJ4d">
@@ -201,7 +204,7 @@
     <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
       <span class="widget-text text-xl font-bold text-white">Charlie London Beauty Boutique</span>
     </div>
-    <a href="https://www.styleseat.com/m/v/charlielondon00" class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center">
+    <a href="https://www.styleseat.com/m/v/charlielondon00" class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center" target="_blank">
         Schedule
         <img src="images/1814093_calendar_events_schedule_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
     </a>  </div>
@@ -211,11 +214,38 @@
     <div class="absolute left-0 top-0 w-full h-full flex items-center text-black bg-black bg-opacity-25 p-4 rounded-lg">
         <span class="widget-text text-xl font-bold text-white">About me</span>
     </div>
-    <a href="#" class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center">
+    <a href="about.html"  class="frosted-button py-3 px-7 text-black rounded-lg absolute right-4 bottom-4 flex items-center">
         Learn More
         <img src="images/4829859_arrow_next_right_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
     </a>
+    
 </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">About Me</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-dark">
+            Hello, <br>
+
+            My name is Charlie London. I am a hairstylist in love with the art of bringing people visions to life. From moms on the go to fashion model. I love to create looks that will work alongside a woman’s natural beauty. Every thing from music videos, runway shows to creative photo shoots it’s my greatest hope that you think of me when considering a stylist that can create the best look possible.
+            
+            “I am a woman before I am a hairstylist”.  
+            
+            Is my slogan so trust me when I say I understand the importance between being unique and original but true to your inner self.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a role="button" type="button" class="btn btn-primary" href="https://www.styleseat.com/m/v/charlielondon00" target="_blank">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- maps -->
 <div class="map-container">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.905249897732!2d-93.09561028820883!3d44.94559407094944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f7d505a173e339%3A0xa3b41da5dd55e6c0!2sCharlie%20London%20Beauty%20Boutique!5e0!3m2!1sen!2sus!4v1691118898489!5m2!1sen!2sus" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -224,5 +254,8 @@
         <img src="images/392502_gps_location_map_marker_icon.svg" alt="Learn More Icon" class="ml-2" style="width:20px; height:20px;">
     </a>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
 </body>
 </html>
