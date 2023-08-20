@@ -12,7 +12,7 @@
   <style>
     body {
 	width: 100wh;
-	height: 90vh;
+	height: 100vh;
 	color: #fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
@@ -121,6 +121,10 @@
     }
     
     @media screen and (max-width: 600px) {
+      body{
+      height:90vh;
+    }
+
       .frosted-button {
         padding: 10px 10px;
         margin-top: auto;
@@ -167,8 +171,8 @@
     }
   </style>
 </head>
-<body class="flex justify-center items-center h-screen bg-gray-200">
-  <div class="w-full sm:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5 md:w-4/5 h-full bg-white p-8 rounded-lg shadow-md overflow-y-auto">
+<body class="flex justify-center items-center bg-gray-200">
+  <div class="w-full sm:w-4/5 lg:w-4/5 xl:w-4/5 2xl:w-4/5 md:w-4/5 h-full bg-white p-8 rounded-lg shadow-md overflow-y-auto h-100">
     <div class="flex flex-col items-center">
       <!-- Profile Image -->
       <img src="images/replicate-prediction-pj7bsbzbh7a5oyadrphpcisrmu.png" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4 border-2 border-blue-300">
